@@ -15,8 +15,6 @@ Job Executor let's you execute a Job with a given JobId and a UserName.
    7. Note that we are using a HashMap instead of a ConcurrentHashMap, to enable blocking read-writes.
    8. A case specific Executor service can be injected into the Job Executor to run jobs
    9. The executor uses a ReentrantLock to keep the reads and writes to the map atomic.
- 
- ##executeJobForUser:
   
 
 Java Docs

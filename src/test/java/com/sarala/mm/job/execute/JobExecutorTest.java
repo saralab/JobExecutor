@@ -64,6 +64,9 @@ public class JobExecutorTest {
 
         JobStatus returnedJobStatus = unitUnderTest.executeJobForUser(ARBITRAY_USER_NAME, ARBITRARY_JOB_ID);
 
+        Mockito.verifyZeroInteractions(expectedFuture);
+        Mockito.verifyZeroInteractions(executor);
+
         assertNotNull(returnedJobStatus);
         assertEquals(EXPECTED_USER_NAME, returnedJobStatus.getUserName());
         assertEquals(EXPECTED_JOB_ID, returnedJobStatus.getJobId());

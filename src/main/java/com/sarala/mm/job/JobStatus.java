@@ -13,7 +13,7 @@ import com.sarala.mm.job.constants.RunningState;
  * <li>{@link #result} : holds the final result from job execution</li>
  * <li>{@link #userName}: user name of the last user who ran a given job</li>
  * <li>{@link #jobId}: Id of the job whose status is being stored.</li>
- * <li> {@link #currentState}: @see {@link RunningState}</li>
+ * <li>{@link #currentState}: @see {@link RunningState}</li>
  * </ul>
  * 
  * @author S
