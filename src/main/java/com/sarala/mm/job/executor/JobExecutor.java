@@ -20,7 +20,7 @@ import com.sarala.mm.job.exception.JobException;
  * Assumptions:
  * <ul>
  * <li>ONLY one instance of a given JobId can run at any time</li>
- * <li>If a user attempts to execute a current running job, the user of the current res</li>
+ * <li>If a user attempts to execute a current running job, the current userName associated with the job is returned</li>
  * <li>This is a low throughput executor, uses the same lock for reads and writes</li>
  * </ul>
  * <p>
